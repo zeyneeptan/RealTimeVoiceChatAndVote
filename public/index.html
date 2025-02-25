@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Voting & Voice Chat</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Real-Time Voice Chat & Voting</h1>
+
+    <div id="call-section">
+        <button id="start-call">Start Call</button>
+        <button id="end-call">End Call</button>
+    </div>
+
+    <audio id="remoteAudio" autoplay></audio>
+
+    <div id="voting-section">
+        <h2>Vote Now:</h2>
+        <button id="vote-yes">Yes</button>
+        <button id="vote-no">No</button>
+        <button id="vote-maybe">Maybe</button>
+        <button id="reset-votes">Reset Votes</button>
+
+        <p>Yes Votes: <span id="yes-count">0</span></p>
+        <p>No Votes: <span id="no-count">0</span></p>
+        <p>Maybe Votes: <span id="maybe-count">0</span></p>
+
+
+    </div>
+
+    <h3>Vote History</h3>
+    <div id="vote-history-container">
+        <ul id="vote-history"></ul>
+    </div>
+
+    <script src="/src/main.js"></script>
+
+
+</body>
+
+</html>
